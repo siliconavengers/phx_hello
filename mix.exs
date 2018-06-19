@@ -4,7 +4,7 @@ defmodule PhxHello.Mixfile do
   def project do
     [
       app: :phx_hello,
-      version: "0.0.1",
+      version: String.trim(File.read!("VERSION")),
       elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
@@ -42,7 +42,8 @@ defmodule PhxHello.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:edeliver, "~> 1.4.3"},
-      {:distillery, "~> 1.5", runtime: false}
+      {:distillery, "~> 1.5", runtime: false},
+      {:eliver, "~> 2.0.0"}
     ]
   end
 
