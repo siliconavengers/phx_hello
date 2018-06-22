@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.5
+* keep change text 4th time
+
 ## 0.0.4
 * Change text 3rd time
 
